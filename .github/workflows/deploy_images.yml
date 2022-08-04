@@ -66,8 +66,8 @@ jobs:
           platforms: linux/amd64
           file: Dockerfile-node
           tags: |
-            yaokun/node:12.13.1-alpine
-            yaokun/node:alpine-latest
+            yaokun/node:12.13.1
+            yaokun/node:latest
   deploy-docker:
     runs-on: ubuntu-latest
     steps:
