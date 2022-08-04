@@ -6,5 +6,5 @@ LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
 USER root
 RUN set -x \
     && apk update \
-    && apk add --no-cache bash curl git tzdata \
+    && apk add --no-cache bash curl git tzdata autoconf automake \
     && npm install -g cnpm@6.0.0 --registry=https://registry.npm.taobao.org
