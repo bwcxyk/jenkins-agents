@@ -1,17 +1,9 @@
 # base
 ARG MAVEN_VERSION=3.6.2
 FROM maven:${MAVEN_VERSION}-jdk-8-slim
+LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
 
 USER root
 RUN set -x \
     && apt update \
-    && apt install curl wget git -y \
-    && curl -OL https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz \
-    && tar -zxf docker-latest.tgz \
-    && cp docker/docker /usr/local/bin/ \
-    && rm -rf docker docker-latest.tgz
-
-RUN git config --global user.email "jenkins@example.com" \
-    && git config --global user.name "jenkins" \
-    && git config --global credential.helper store
-
+    && apt install curl wget git -y
