@@ -1,10 +1,10 @@
 # base
 ARG NODE_VERSION=12.13.1
-FROM node:${NODE_VERSION}-alpine
+FROM node:${NODE_VERSION}
 
 LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
 USER root
 RUN set -x \
-    && apk update \
-    && apk add --no-cache bash curl git tzdata autoconf automake gcc file zlib-dev nasm make \
+    && apt update \
+    && apt install -y curl git tzdata gcc zlib make \
     && npm install -g cnpm@6.0.0 --registry=https://registry.npm.taobao.org
