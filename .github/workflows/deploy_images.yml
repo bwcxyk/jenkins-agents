@@ -93,6 +93,6 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          file: Dockerfile-node
+          file: Dockerfile-docker
           tags: |
             yaokun/docker:latest
