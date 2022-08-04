@@ -11,9 +11,6 @@ RUN set -x \
     && cp docker/docker /usr/local/bin/ \
     && rm -rf docker docker-latest.tgz
 
-COPY settings.xml /usr/local/maven/conf/
-
-
 RUN git config --global user.email "jenkins@example.com" \
     && git config --global user.name "jenkins" \
     && git config --global credential.helper store
