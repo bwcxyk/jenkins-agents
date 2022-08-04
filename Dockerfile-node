@@ -6,7 +6,7 @@ LABEL maintainer="yaokun@bwcxtech.com"
 USER root
 RUN set -x \
     && apk update \
-    && apk add --no-cache bash curl tzdata -y \
+    && apk add --no-cache bash curl git tzdata \
     && curl -OL https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz \
     && tar -zxf docker-latest.tgz \
     && cp docker/docker /usr/local/bin/ \
