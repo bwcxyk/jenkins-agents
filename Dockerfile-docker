@@ -3,6 +3,6 @@ FROM docker:latest
 
 USER root
 RUN set -x \
-    && apt update \
-    && apt install curl wget git -y
+    && apk update \
+    && apk add --no-cache bash curl wget git tzdata
 
