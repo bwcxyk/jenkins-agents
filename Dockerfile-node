@@ -1,5 +1,5 @@
 # base
-ARG NODE_VERSION=12.13.1
+ARG NODE_VERSION=14.18.3
 FROM node:${NODE_VERSION}
 
 LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
