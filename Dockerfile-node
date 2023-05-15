@@ -5,9 +5,4 @@ FROM node:${NODE_VERSION}
 LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
 USER root
 
-# RUN set -x \
-#     && apt update \
-#     && apt install -y curl git tzdata gcc make \
-#     && npm install -g cnpm@6.0.0 --registry=https://registry.npm.taobao.org
-
 RUN npm install -g cnpm@6.0.0 --registry=https://registry.npm.taobao.org
