@@ -1,5 +1,5 @@
 # base
-ARG NODE_VERSION=14.19.3-slim
+ARG NODE_VERSION=14.18.3-slim
 FROM node:${NODE_VERSION}
 
 LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
