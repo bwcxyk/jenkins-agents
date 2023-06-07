@@ -1,6 +1,8 @@
 # base
 FROM docker:latest
 
+ENV TZ "Asia/Shanghai"
+
 USER root
 RUN set -x \
     && apk update \

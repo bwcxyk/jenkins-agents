@@ -2,6 +2,8 @@
 ARG NODE_VERSION=14.19.3-slim
 FROM node:${NODE_VERSION}
 
+ENV TZ "Asia/Shanghai"
+
 LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
 USER root
 
