@@ -8,4 +8,4 @@ LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
 USER root
 
 RUN npm config set registry https://registry.npmmirror.com \
-    && npm install -g cnpm@6.0.0 --registry=https://registry.npmmirror.com
+    && npm install -g cnpm@6.2.0 --registry=https://registry.npmmirror.com
