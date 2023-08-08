@@ -1,11 +1,14 @@
 # base
-ARG NODE_VERSION=14.19.3
+ARG NODE_VERSION=14.19.3-slim
 FROM node:${NODE_VERSION}
 LABEL maintainer="yaokun <yaokun@bwcxtech.com>"
 
 ENV TZ "Asia/Shanghai"
 
 USER root
+
+RUN apt update \
+    && apt install libtool automake autoconf nasm
 
 RUN npm config set registry https://registry.npmmirror.com \
     && npm install -g cnpm@6.2.0 \
