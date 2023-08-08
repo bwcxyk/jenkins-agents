@@ -8,7 +8,7 @@ ENV TZ "Asia/Shanghai"
 USER root
 
 RUN apt update \
-    && apt install libtool automake autoconf nasm
+    && apt install -y libtool automake autoconf nasm
 
 RUN npm config set registry https://registry.npmmirror.com \
     && npm install -g cnpm@6.2.0 \
