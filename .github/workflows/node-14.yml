@@ -36,4 +36,4 @@ jobs:
           platforms: linux/amd64
           file: docker-node/14/Dockerfile
           tags: |
-            yaokun/node:14.19.3
+            yaokun/node:14
